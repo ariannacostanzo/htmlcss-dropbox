@@ -1,0 +1,150 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* generics  */
+
+body {
+    
+    /* background-color: red; */
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* utils */
+
+.btn {
+    background-color: #0061ff;
+    padding: 8px 16px;
+    color: white;
+}
+
+.btn.btn-large {
+    padding: 12px 20px;
+}
+
+.container-large {
+    width: 63%;
+    margin: 0 auto;
+}
+
+.container-medium {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* header */
+
+
+header {
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px grey;
+    font-size: 16px;
+}
+
+/* header nav {
+    
+    height: 100%;
+} */
+
+header img {
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
+header ul {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.header-nav-left {
+    display: flex;
+    padding-left: 20px;
+}
+
+.header-nav-right {
+    padding-right: 20px;
+}
+
+/* jumbo */
+
+.jumbo {
+    background-color: #b4d0e7;
+    display: flex;
+    justify-content: center;
+}
+
+.jumbo-container {
+    padding-top: 160px;
+}
+
+.jumbo h1 {
+    font-size: 75px;
+    font-weight: 800;
+}
+
+.jumbo-row {
+    display: flex;
+}
+
+.jumbo-col {
+    flex-basis: 30%;
+}
+
+.jumbo-col {
+    margin-top: 15px;
+}
+
+.jumbo-col > * {
+    margin: 40px 0;
+    line-height: 1.5;
+}
+
+.jumbo-col i {
+    margin: 0;
+    font-size: 50px;
+}
+
+
+
+
+#jumbo-img {
+    width: 800px;
+    position: relative;
+    top: 60px;
+}
+
+
