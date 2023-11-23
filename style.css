@@ -72,12 +72,12 @@ main h2 {
 
 
 .container-large {
-    width: 63%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .container-medium {
-    width: 53%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -383,7 +383,29 @@ header a {
 
 /* Dropbox Business */
 
+.dropbox-business-row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.dropbox-business-col {
+    flex-basis: calc(100% / 3);
+    padding: 0 var(--spaceM);
+    margin-bottom: var(--spaceL);
+}
+
+.dropbox-business-img {
+    width: 100%;
+}
+
+.dropbox-business-col h3 {
+    font-size: 24px;
+    margin-bottom: var(--spaceM);
+}
+
+
+
+/* Dropbox Business */
 
 
 
