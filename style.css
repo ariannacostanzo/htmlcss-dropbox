@@ -407,9 +407,14 @@ header a {
 
 /* Dropbox Business */
 
+/* Find more */
 
+.find-more a {
+    color: blue;
+    text-decoration: underline;
+}
 
-
+/* Find more */
 
 
 
