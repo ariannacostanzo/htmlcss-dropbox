@@ -81,6 +81,12 @@ main h2 {
     margin: 0 auto;
 }
 
+.separator {
+    border-bottom: 1px solid var(--grey);
+    height: 1px;
+    width: 20%;
+}
+
 /* utils */
 
 /* header */
@@ -291,13 +297,9 @@ header a {
     color: blue;
 }
 
-/* separator */
 
-.business-plan .separator {
-    border-bottom: 1px solid var(--grey);
-    height: 1px;
-    width: 20%;
-}
+
+
 
 
 /* business-plan list */
@@ -415,6 +417,124 @@ header a {
 }
 
 /* Find more */
+
+/* Brand container */
+
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-small-container {
+    flex-basis: 33%;
+}
+
+.brand-big-container {
+    flex-basis: 34%;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.brand-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-small-box {
+    flex-basis: calc(100% / 2);
+    padding: 0 15px;
+    height: 313.98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenuto brand container */
+
+.brand-img {
+    width: 160px;
+    filter: invert(100%) sepia(1%) saturate(7496%) hue-rotate(74deg) brightness(123%) contrast(119%);
+    
+}
+
+#brand-big-container-img {
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.brand-big-container p  {
+    margin-top: 50px;
+}
+
+.brand-larger-container {
+   background-color: #b4d0e7; 
+   flex-grow: 1;
+   color: #61082b;
+   
+}
+
+.brand-larger-container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0;
+}
+
+
+.brand-larger-container-content h4 {
+    font-size: 45px;
+}
+
+.brand-larger-container-content a {
+    align-self: flex-start;
+    background-color: white;
+    color: black;
+}
+
+
+
+/* box colorati */
+
+#designit {
+    background-color: #a2d39b;
+}
+#arizona-state {
+    background-color: #61082b;
+}
+#university-of-florida {
+    background-color: #0093ce;
+}
+#topps {
+    background-color: #ff1c1c ;
+}
+#world-bycicle-relief {
+    background-color: #d5001f;
+}
+#hearst {
+    background-color: #b4d0e7;
+}
+#lonely-planet {
+    background-color: #0d2481;
+}
+#clear-channel {
+    background-color: #ffd830;
+}
+
+
+
+
+/* Brand container */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
