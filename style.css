@@ -6,7 +6,7 @@
     --spaceS: 20px;
     --spaceM: 35px;
     --spaceL: 40px;
-    --spaceXL: 130px
+    --spaceXL: 80px
 }
 
 
@@ -40,6 +40,19 @@ a {
 }
 
 
+main section {
+    padding: var(--spaceXL) 0;
+}
+
+main h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+
+
+/* generics  */
+
 /* utils */
 
 .btn {
@@ -67,6 +80,8 @@ a {
     width: 53%;
     margin: 0 auto;
 }
+
+/* utils */
 
 /* header */
 
@@ -115,6 +130,8 @@ header a {
     padding-right: var(--spaceS);
 }
 
+/* header */
+
 /* jumbo */
 
 .jumbo {
@@ -154,26 +171,22 @@ header a {
     font-size: 50px;
 }
 
-
-
-
 #jumbo-img {
     width: 800px;
     position: relative;
     top: 60px;
 }
 
+/* jumbo */
+
 
 /* business plan */
 
 .business-plan {
-    margin-top: 130px;
+    margin-top: 50px;
 }
 
-.business-plan h2 {
-    font-size: 40px;
-    margin-bottom: 60px;
-}
+
 
 .circle {
     display: inline-block;
@@ -194,6 +207,7 @@ header a {
 .business-plan-checkbox {
     display: inline-block;
     margin-right: var(--spaceL);
+    font-size: 14px;
 }
 
 /* business-plan row */
@@ -201,7 +215,7 @@ header a {
 .business-plan-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: var(--spaceL);
 }
 
 .business-plan-col {
@@ -324,12 +338,58 @@ header a {
 }
 
 
-
-
 .business-plane-large-col .business-plan-card-button {
     text-align: right;
     flex-grow: 1;
 }
+
+/* business plan */
+
+
+/* trova un partner */
+
+
+.find-a-partner {
+    display: flex;
+    align-items: center;
+}
+
+
+#partner-img {
+    width: 60%;
+}
+
+
+.find-a-partner-text {
+    padding: var(--spaceL);
+}
+
+.find-a-partner-text > * {
+    margin: var(--spaceS);
+}
+
+.find-a-partner-text p {
+    margin-bottom: var(--spaceL);
+}
+
+.find-a-partner-text .btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* trova un partner */
+
+/* Dropbox Business */
+
+
+
+
+
+
+
+
 
 
 .space {
