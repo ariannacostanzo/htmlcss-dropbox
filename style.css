@@ -79,6 +79,10 @@ img {
     background-color: var(--blue);
 }
 
+.btn:hover {
+    filter: brightness(1.2);
+}
+
 
 /* container */
 
@@ -103,6 +107,10 @@ img {
     width: 20%;
 }
 
+
+.not-shown {
+    display: none;
+}
 
 /* fine utils */
 
@@ -137,13 +145,23 @@ header a {
     text-decoration: none;
 }
 
+/* header a:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+} */
+
 .header-nav-left {
-    display: flex;
     padding-left: var(--spaceS);
 }
 
 .header-nav-right {
     padding-right: var(--spaceS);
+    
 }
 
 
@@ -386,6 +404,11 @@ header a {
     border: 1px solid black;
 }
 
+.find-a-partner-text .btn:hover {
+    color: rgba(26, 26, 26, 0.664)
+}
+
+
 
 /* fine trova un partner */
 
@@ -536,8 +559,10 @@ header a {
 /* frequent question */
 
 
-.frequent-question-dropdown-container > * {
-    margin: var(--spaceL) 0;
+
+.frequent-question-dropdown-container > div {
+    padding: var(--spaceM) 0;
+    cursor: pointer;
 }
 
 .frequent-question-dropdown h4 {
@@ -550,6 +575,30 @@ header a {
     right: 40px;
     transform: translate(0, -50%);
 }
+
+.frequent-question-dropdown > * {
+    margin: var(--spaceS) 0;
+}
+
+.frequent-question-dropdown p {
+    display: none;
+}
+
+.frequent-question-dropdown:hover p {
+    display: inline-block;
+    
+}
+
+
+.frequent-question-dropdown:hover i {
+    display: none;
+    
+}
+
+.frequent-question-dropdown:hover .not-shown {
+    display: inline-block;
+}
+
 
 
 /* fine frequent question */
