@@ -18,15 +18,10 @@
 }
 
 
-
-
 /* generics  */
 
 body {
-    
-    /* background-color: red; */
     font-family: 'Open Sans', sans-serif;
-    
 }
 
 ul {
@@ -49,27 +44,39 @@ main h2 {
     margin-bottom: 60px;
 }
 
+img {
+    display: block;
+}
 
 
-/* generics  */
+/* fine generics  */
 
 /* utils */
 
+/* btn */
+
 .btn {
-    background-color: var(--blue);
-    padding: 8px 16px;
-    color: white;
+    padding: 12px 20px;
+    display: inline-block;
 }
 
-.btn.btn-large {
-    padding: 12px 20px;
+.btn-small {
+    padding: 8px 16px;
 }
+
 
 .btn-extra-large {
-    padding: 12px 35px;
+    width: 100%;
+    text-align: center;
     
 }
 
+.btn-blue {
+    color: white;
+    background-color: var(--blue);
+}
+
+/* container */
 
 .container-large {
     max-width: 1200px;
@@ -81,13 +88,15 @@ main h2 {
     margin: 0 auto;
 }
 
+/* separator */
+
 .separator {
     border-bottom: 1px solid var(--grey);
     height: 1px;
     width: 20%;
 }
 
-/* utils */
+/* fine utils */
 
 /* header */
 
@@ -108,12 +117,6 @@ header {
 }
 
 
-
-header img {
-    margin-right: var(--spaceM);
-    vertical-align: middle;
-}
-
 header ul {
     display: flex;
     gap: var(--spaceM);
@@ -125,8 +128,6 @@ header a {
     text-decoration: none;
 }
 
-
-
 .header-nav-left {
     display: flex;
     padding-left: var(--spaceS);
@@ -136,7 +137,7 @@ header a {
     padding-right: var(--spaceS);
 }
 
-/* header */
+/* fine header */
 
 /* jumbo */
 
@@ -157,33 +158,29 @@ header a {
 
 .jumbo-row {
     display: flex;
+    position: relative;
+    top: 60px;
 }
 
 .jumbo-col {
     flex-basis: 30%;
 }
 
-.jumbo-col {
-    margin-top: 15px;
-}
 
 .jumbo-col > * {
-    margin: var(--spaceL) 0;
-    line-height: 1.5;
+    margin-bottom: 25px;
 }
 
 .jumbo-col i {
-    margin: 0;
+    margin-top: 50px;
     font-size: 50px;
 }
 
 #jumbo-img {
     width: 800px;
-    position: relative;
-    top: 60px;
 }
 
-/* jumbo */
+/*  fine jumbo */
 
 
 /* business plan */
@@ -219,13 +216,14 @@ header a {
 /* business-plan row */
 
 .business-plan-row {
+    margin-top: var(--spaceL);
     display: flex;
     flex-wrap: wrap;
     gap: var(--spaceL);
 }
 
 .business-plan-col {
-    margin-top: var(--spaceL);
+    
     flex-basis: calc(100% / 3 - 80px / 3);
     border: 1px solid var(--grey);
     font-size: 14px;
@@ -241,9 +239,7 @@ header a {
 /* business-plan card */
 
 .business-plan-card {
-    padding: 0 var(--spaceM);
-    /* border: 1px solid var(--grey); */
-    
+    padding: 0 30px;
 }
 
 /* distanziamento tra i div */
@@ -260,7 +256,6 @@ header a {
 /* business plan card header */
 
 .business-plan-card-header h3 {
-    
     font-size: 24px;
 }
 
@@ -274,6 +269,10 @@ header a {
 
 /* .business plan card info */
 
+.icon-text {
+    display: flex;
+    align-items: baseline;
+}
 
 
 .business-plan i {
@@ -283,7 +282,7 @@ header a {
 /* .business plan card button */
 
 .business-plan-card-button {
-    padding: 30px 0 10px 0;
+    padding-top: 10px;
 }
 
 /* business plan card link */
@@ -298,19 +297,14 @@ header a {
 }
 
 
-
-
-
-
 /* business-plan list */
 
 .business-plan-list ul {
-    padding-bottom: var(--spaceXS);
+    padding: var(--spaceXS) 0;
 }
 
 .business-plan-list li {
     margin: var(--spaceS) 0;
-    padding-right: var(--spaceS);
 }
 
 .fa-check.check-blue {
@@ -320,32 +314,34 @@ header a {
 
 /* 4th col */
 
-.business-plan-col.business-plane-large-col {
+.business-plan-col.business-plan-large-col {
     flex-basis: 100%;
 }
 
-.business-plane-large-col .business-plan-card {
+.business-plan-large-col .business-plan-card {
     display: flex;
 }
 
-.business-plane-large-col .business-plan-card-header {
-    /* margin: 0; */
+.business-plan-large-col .business-plan-card-header {
     margin-bottom: 30px;
     flex-basis: 70%;
 }
 
-.business-plane-large-col h3 {
+.business-plan-large-col h3 {
     margin: 0;
     
 }
 
+.business-plan-large-col p {
+    padding-bottom: 30px;
+}
 
-.business-plane-large-col .business-plan-card-button {
+.business-plan-large-col .business-plan-card-button {
     text-align: right;
     flex-grow: 1;
 }
 
-/* business plan */
+/* fine business plan */
 
 
 /* trova un partner */
@@ -375,13 +371,12 @@ header a {
 }
 
 .find-a-partner-text .btn {
-    background-color: transparent;
     color: black;
     border: 1px solid black;
 }
 
 
-/* trova un partner */
+/* fine trova un partner */
 
 /* Dropbox Business */
 
@@ -407,7 +402,7 @@ header a {
 
 
 
-/* Dropbox Business */
+/* fine Dropbox Business */
 
 /* Find more */
 
@@ -416,7 +411,7 @@ header a {
     text-decoration: underline;
 }
 
-/* Find more */
+/* fine Find more */
 
 /* Brand container */
 
@@ -454,7 +449,6 @@ header a {
 .brand-img {
     width: 160px;
     filter: invert(100%) sepia(1%) saturate(7496%) hue-rotate(74deg) brightness(123%) contrast(119%);
-    
 }
 
 #brand-big-container-img {
@@ -476,7 +470,7 @@ header a {
 .brand-larger-container-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: first baseline;
     padding: 120px 0;
 }
 
@@ -486,9 +480,9 @@ header a {
 }
 
 .brand-larger-container-content a {
-    align-self: flex-start;
     background-color: white;
     color: black;
+    padding: 12px 40px;
 }
 
 
@@ -523,11 +517,30 @@ header a {
 
 
 
-/* Brand container */
+/* fine Brand container */
+
+
+/* frequent question */
+
+.frequent-question-dropdown-container > * {
+    margin: var(--spaceL) 0;
+}
+
+.frequent-question-dropdown h4 {
+    position: relative;
+}
+
+
+.frequent-question-dropdown i {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translate(0, -50%);
+}
 
 
 
-
+/* fine frequent question */
 
 
 
