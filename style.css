@@ -11,6 +11,8 @@
 
 
 /* css reset */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,7 @@
 
 
 /* generics  */
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -33,7 +36,6 @@ ul {
 a {
     text-decoration: none;
 }
-
 
 main section {
     padding: var(--spaceXL) 0;
@@ -51,9 +53,12 @@ img {
 
 /* fine generics  */
 
+
 /* utils */
 
+
 /* btn */
+
 
 .btn {
     padding: 12px 20px;
@@ -64,11 +69,9 @@ img {
     padding: 8px 16px;
 }
 
-
 .btn-extra-large {
     width: 100%;
     text-align: center;
-    
 }
 
 .btn-blue {
@@ -76,7 +79,9 @@ img {
     background-color: var(--blue);
 }
 
+
 /* container */
+
 
 .container-large {
     max-width: 1200px;
@@ -88,7 +93,9 @@ img {
     margin: 0 auto;
 }
 
+
 /* separator */
+
 
 .separator {
     border-bottom: 1px solid var(--grey);
@@ -96,7 +103,9 @@ img {
     width: 20%;
 }
 
+
 /* fine utils */
+
 
 /* header */
 
@@ -104,7 +113,7 @@ img {
 header {
     height: 80px;
     background-color: white;
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     top: 0;
@@ -137,9 +146,12 @@ header a {
     padding-right: var(--spaceS);
 }
 
+
 /* fine header */
 
+
 /* jumbo */
+
 
 .jumbo {
     background-color: #b4d0e7;
@@ -148,7 +160,7 @@ header a {
 }
 
 .jumbo-container {
-    padding-top: 160px;
+    padding-top: 80px;
 }
 
 .jumbo h1 {
@@ -339,6 +351,10 @@ header a {
 .business-plan-large-col .business-plan-card-button {
     text-align: right;
     flex-grow: 1;
+}
+
+.business-plan-large-col a {
+    padding: 12px 40px;
 }
 
 /* fine business plan */
@@ -543,15 +559,55 @@ header a {
 /* fine frequent question */
 
 
+/* footer */
 
 
-
-
-
-
-
-
-
-.space {
-    margin-top: 100px;
+footer {
+    background-color: black;
+    color: white;
 }
+
+.footer-list {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    gap: 30px;
+}
+
+footer h4 {
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+footer li {
+    margin: 15px 0;
+}
+
+footer a {
+    color: #fff7f7;
+}
+
+footer .separator {
+    width: 10%;
+}
+
+.select-language {
+    display: flex;
+    gap: 10px;
+    align-items: first baseline;
+    padding: 50px 0;
+    color: #fff7f79f;
+}
+
+.select-language i:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+
+/* fine footer */
+
+
+
