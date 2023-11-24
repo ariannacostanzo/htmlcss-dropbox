@@ -197,11 +197,10 @@ header a {
 
 /* business plan */
 
+
 .business-plan {
     margin-top: 50px;
 }
-
-
 
 .circle {
     display: inline-block;
@@ -213,11 +212,9 @@ header a {
     margin-right: 5px;
 }
 
-
 .circle.checked {
     border: 4px solid var(--blue);
 }
-
 
 .business-plan-checkbox {
     display: inline-block;
@@ -235,7 +232,6 @@ header a {
 }
 
 .business-plan-col {
-    
     flex-basis: calc(100% / 3 - 80px / 3);
     border: 1px solid var(--grey);
     font-size: 14px;
@@ -245,7 +241,6 @@ header a {
     text-align: center;
     padding: var(--spaceXS) 0;
     border-bottom: 1px solid var(--grey);
-    
 }
 
 /* business-plan card */
@@ -255,6 +250,7 @@ header a {
 }
 
 /* distanziamento tra i div */
+
 .business-plan-card > * {
     margin: var(--spaceM) 0;
 }
@@ -286,7 +282,6 @@ header a {
     align-items: baseline;
 }
 
-
 .business-plan i {
     margin-right: 8px;
 }
@@ -307,7 +302,6 @@ header a {
     text-decoration: underline;
     color: blue;
 }
-
 
 /* business-plan list */
 
@@ -357,6 +351,7 @@ header a {
     padding: 12px 40px;
 }
 
+
 /* fine business plan */
 
 
@@ -365,26 +360,26 @@ header a {
 
 .find-a-partner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
-
 
 #partner-img {
     width: 60%;
 }
-
 
 .find-a-partner-text {
     padding: var(--spaceL);
 }
 
 .find-a-partner-text > * {
-    margin: var(--spaceS);
+    margin: var(--spaceS) var(--spaceXS);
 }
 
-.find-a-partner-text p {
-    margin-bottom: var(--spaceL);
+.find-a-partner-text h3 {
+    font-size: 24px;
 }
+
+
 
 .find-a-partner-text .btn {
     color: black;
@@ -399,6 +394,8 @@ header a {
 .dropbox-business-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -35px;
 }
 
 .dropbox-business-col {
@@ -408,7 +405,7 @@ header a {
 }
 
 .dropbox-business-img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .dropbox-business-col h3 {
@@ -417,19 +414,23 @@ header a {
 }
 
 
-
 /* fine Dropbox Business */
 
+
 /* Find more */
+
 
 .find-more a {
     color: blue;
     text-decoration: underline;
 }
 
+
 /* fine Find more */
 
+
 /* Brand container */
+
 
 .brand-container {
     display: flex;
@@ -501,8 +502,6 @@ header a {
     padding: 12px 40px;
 }
 
-
-
 /* box colorati */
 
 #designit {
@@ -531,12 +530,11 @@ header a {
 }
 
 
-
-
 /* fine Brand container */
 
 
 /* frequent question */
+
 
 .frequent-question-dropdown-container > * {
     margin: var(--spaceL) 0;
@@ -546,14 +544,12 @@ header a {
     position: relative;
 }
 
-
 .frequent-question-dropdown i {
     position: absolute;
     top: 50%;
     right: 40px;
     transform: translate(0, -50%);
 }
-
 
 
 /* fine frequent question */
