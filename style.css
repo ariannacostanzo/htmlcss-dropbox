@@ -155,6 +155,14 @@ header a {
     left: 0;
 } */
 
+
+header a:hover:not(.btn) {
+    text-decoration: underline;
+    text-underline-offset: 34px;
+    text-decoration-thickness: 2px;
+}
+
+
 .header-nav-left {
     padding-left: var(--spaceS);
 }
@@ -238,7 +246,16 @@ header a {
     display: inline-block;
     margin-right: var(--spaceL);
     font-size: 14px;
+    cursor: pointer;
 }
+
+/* .business-plan-checkbox:hover .circle {
+    border: 4px solid var(--blue)
+} */
+
+
+
+
 
 /* business-plan row */
 
@@ -482,6 +499,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 /* contenuto brand container */
@@ -530,26 +548,66 @@ header a {
 #designit {
     background-color: #a2d39b;
 }
+
+#designit:hover {
+    border: 20px solid #68a060;
+}
+
+
 #arizona-state {
     background-color: #61082b;
 }
+
+#arizona-state:hover {
+    border: 20px solid #470721;
+}
+
 #university-of-florida {
     background-color: #0093ce;
 }
+
+#university-of-florida:hover {
+    border: 20px solid #00648b;
+}
+
 #topps {
     background-color: #ff1c1c ;
 }
+
+#topps:hover {
+    border: 20px solid #7c0e0e;
+}
+
 #world-bycicle-relief {
     background-color: #d5001f;
 }
+
+#world-bycicle-relief:hover {
+    border: 20px solid #940016;
+}
+
 #hearst {
     background-color: #b4d0e7;
 }
+
+#hearst:hover {
+    border: 20px solid #7a8d9c;
+}
+
 #lonely-planet {
     background-color: #0d2481;
 }
+
+#lonely-planet:hover {
+    border: 20px solid #071344;
+}
+
 #clear-channel {
     background-color: #ffd830;
+}
+
+#clear-channel:hover {
+    border: 20px solid #9c851e;
 }
 
 
@@ -635,6 +693,11 @@ footer a {
     color: #fff7f7;
 }
 
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 footer .separator {
     width: 10%;
 }
@@ -645,10 +708,15 @@ footer .separator {
     align-items: first baseline;
     padding: 50px 0;
     color: #fff7f79f;
+    cursor: pointer;
 }
 
 .select-language i:nth-of-type(2) {
     align-self: flex-end;
+}
+
+.select-language ul li {
+    display: flex;
 }
 
 
