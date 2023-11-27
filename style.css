@@ -9,6 +9,9 @@
     --spaceXL: 80px
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* css reset */
 
@@ -133,11 +136,15 @@ header {
     z-index: 1;
 }
 
-
 header ul {
     display: flex;
     gap: var(--spaceM);
     align-items: center;
+}
+
+header ul li {
+    padding: 30px 0;
+    cursor: pointer;
 }
 
 header a {
@@ -145,23 +152,11 @@ header a {
     text-decoration: none;
 }
 
-/* header a:after{
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: black;
-    bottom: 0;
-    left: 0;
-} */
-
-
-header a:hover:not(.btn) {
+header li:hover:not(.btn) {
     text-decoration: underline;
     text-underline-offset: 34px;
     text-decoration-thickness: 2px;
 }
-
 
 .header-nav-left {
     padding-left: var(--spaceS);
@@ -500,6 +495,11 @@ header a:hover:not(.btn) {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 15px solid transparent;
+}
+
+.brand-small-box:hover {
+    border: 15px solid rgba(255, 255, 255, 0.5);
 }
 
 /* contenuto brand container */
@@ -549,66 +549,40 @@ header a:hover:not(.btn) {
     background-color: #a2d39b;
 }
 
-#designit:hover {
-    border: 20px solid #68a060;
-}
-
-
 #arizona-state {
     background-color: #61082b;
 }
 
-#arizona-state:hover {
-    border: 20px solid #470721;
-}
 
 #university-of-florida {
     background-color: #0093ce;
 }
 
-#university-of-florida:hover {
-    border: 20px solid #00648b;
-}
 
 #topps {
     background-color: #ff1c1c ;
 }
 
-#topps:hover {
-    border: 20px solid #7c0e0e;
-}
 
 #world-bycicle-relief {
     background-color: #d5001f;
 }
 
-#world-bycicle-relief:hover {
-    border: 20px solid #940016;
-}
 
 #hearst {
     background-color: #b4d0e7;
 }
 
-#hearst:hover {
-    border: 20px solid #7a8d9c;
-}
 
 #lonely-planet {
     background-color: #0d2481;
 }
 
-#lonely-planet:hover {
-    border: 20px solid #071344;
-}
 
 #clear-channel {
     background-color: #ffd830;
 }
 
-#clear-channel:hover {
-    border: 20px solid #9c851e;
-}
 
 
 /* fine Brand container */
@@ -647,7 +621,6 @@ header a:hover:not(.btn) {
     
 }
 
-
 .frequent-question-dropdown:hover i {
     display: none;
     
@@ -685,7 +658,7 @@ footer h4 {
     margin: 30px 0;
 }
 
-footer li {
+.footer-list li {
     margin: 15px 0;
 }
 
@@ -706,19 +679,55 @@ footer .separator {
     display: flex;
     gap: 10px;
     align-items: first baseline;
-    padding: 50px 0;
+    padding: 50px 0 120px 0;
     color: #fff7f79f;
     cursor: pointer;
 }
 
-.select-language i:nth-of-type(2) {
-    align-self: flex-end;
+.fa-sort-up {
+    vertical-align: middle;
+    margin-left: 3px;
 }
 
-.select-language ul li {
-    display: flex;
+.fa-sort-down {
+    display: none;
+    margin-left: 3px;
 }
 
+.list-not-shown {
+    background-color: white;
+    color: black;
+    box-sizing: content-box;
+    position: relative;
+    top: 10px;
+    right: 25px;
+}
+
+.list-not-shown li {
+    padding: 0 20px;
+}
+
+.select-language li ul {
+    display: none;
+}
+
+.select-language:hover .fa-sort-up {
+    display: none;
+}
+
+.select-language:hover .fa-sort-down {
+    display: inline;
+}
+
+
+.select-language:hover .list-not-shown {
+    display: block;
+}
+
+
+.list-not-shown li:hover {
+    background-color: #0061ff;
+}
 
 /* fine footer */
 
