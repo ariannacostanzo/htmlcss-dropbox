@@ -1,0 +1,142 @@
+
+/* media query */
+
+@media screen and (max-width: 768px){
+
+    /* generics */
+
+    main h2 {
+        font-size: 30px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    main section {
+        padding: 30px 0;
+    }
+
+    /* utils */
+
+    
+    .container-large {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+
+    .container-medium {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+
+
+    /* fine utils */
+
+
+        /* header */
+    header {
+        font-size: 12px;
+    }
+
+    header ul {
+        gap: 10px;
+    }
+
+    header img {
+        max-width: 80px;
+    }
+
+    .header-nav-left {
+        padding-left: 0;
+    }
+
+    .header-nav-right {
+        padding-right: 0;
+        
+    }
+
+    /* fine header */
+
+    /* jumbo */
+
+    .jumbo {
+        flex-wrap: wrap;
+        padding: 0 10px;
+        
+    }
+
+    .jumbo-row {
+        gap: 20px;
+    }
+
+    .jumbo h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .jumbo-col {
+        font-size: 15px;
+    }
+
+    #jumbo-img {
+        width: 500px;
+    }
+
+    .jumbo-col i {
+        font-size: 40px;
+        position: relative;
+        bottom: 40px;
+    }
+
+
+    /* fine jumbo */
+
+    /* business plan */
+
+    .business-plan {
+        margin-top: 90px;
+    }
+
+    .business-plan-col {
+        
+        font-size: 12px;
+    }
+
+
+
+    /* fine business plan */
+
+    /* trova un partner */
+
+    .find-a-partner-text {
+        padding: 10px;
+    }
+
+    .find-a-partner-text h3 {
+        margin-top: 0;
+    }
+
+    /* fine trova un partner */
+
+    /* Dropbox Business */
+
+    .dropbox-business-col {
+        padding: 0 15px;
+    }
+
+    .dropbox-business-col h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .dropbox-business-row p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+
+    /* Dropbox Business */
+
+}
+
